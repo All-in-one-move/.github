@@ -1,3 +1,4 @@
+![iScreen Shoter - Preview - 241028160444](https://github.com/user-attachments/assets/79854f3f-85ff-4e83-9696-080e680756a8)
 # Pitching! (Speaking + Teaching = Pitching)
 
 🎤 **Speak, Easy! 자신 있게 말하세요!**
