@@ -78,3 +78,26 @@
 ## 👀 기대 효과
 
 사용자들은 종합적인 피드백을 통해 발표 능력을 크게 향상시키고, 반복적인 연습과 맞춤형 조언으로 발표에 대한 자신감을 높일 수 있습니다. **표준어 사용**과 **비언어적 요소의 개선**을 통해 효과적인 커뮤니케이션 능력을 강화하며, **화상 회의와 채팅 기능**을 통해 팀 내 협업의 효율성을 증대시킵니다. 또한, **발표에 도움이 되는 칼럼**을 통해 최신 발표 트렌드와 노하우를 습득하여 지속적인 성장을 이룰 수 있습니다.
+
+## MIT License
+
+Copyright (c) 2024 Pitching-Kakaotech
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
