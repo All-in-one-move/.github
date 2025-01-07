@@ -94,8 +94,14 @@
 | **Frontend** | <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=Vite&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=TailwindCSS&logoColor=white"/> <img src="https://img.shields.io/badge/Zustand-181717?style=flat-square&logo=Zustand&logoColor=white"/> |
 | **Backend**     | <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/SpringWebFlux-6DB33F?style=flat-square&logo=Spring&logoColor=white"/> <img src="https://img.shields.io/badge/WebSocket-000000?style=flat-square&logo=WebSocket&logoColor=white"/> <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=WebRTC&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white"/> <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=RabbitMQ&logoColor=white"/> |
 | **AI & Data**        | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=TensorFlow&logoColor=white"/> <img src="https://img.shields.io/badge/MediaPipe-3776AB?style=flat-square&logo=MediaPipe&logoColor=white"/> <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=OpenAI&logoColor=white"/> <img src="https://img.shields.io/badge/Whisper-000000?style=flat-square&logo=Whisper&logoColor=white"/> <img src="https://img.shields.io/badge/Librosa-FF6F00?style=flat-square&logo=Librosa&logoColor=white"/> |
-| **Cloud & Infra**   | <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=Linux&logoColor=black"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=AmazonAWS&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/> <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=Jenkins&logoColor=white"/> <img src="https://img.shields.io/badge/Terraform-623CE4?style=flat-square&logo=Terraform&logoColor=white"/> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=Ansible&logoColor=white"/> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white"/> |
+| **Cloud & Infra**   | <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=Linux&logoColor=black"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=AmazonAWS&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/> <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=Jenkins&logoColor=white"/> <img src="https://img.shields.io/badge/Terraform-623CE4?style=flat-square&logo=Terraform&logoColor=white"/> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=Ansible&logoColor=white"/> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white"/> |
 | **협업툴**     | <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=Jira&logoColor=white"/> <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white"/> |
+
+- FE(프론트엔드): React, Vite, TypeScript, TailwindCSS, Zustand
+- BE(백엔드): Java, Spring WebFlux, WebSocket, WebRTC, Redis, RabbitMQ, PostgreSQL, S3, OAuth2, JWT
+- AI & Data: Python, TensorFlow, Mediapipe, OpenAI, Whisper, Librosa, OpenCV, FFmpeg, FastAPI
+- Cloud & Infra: AWS (EC2, S3, RDS), Docker, Jenkins, Terraform, Ansible, Prometheus, Grafana, Nginx, Linux
+- 협업툴: Git, GitHub, GitLens, Notion, Jira, Slack
 
 ---
 
@@ -107,12 +113,12 @@
 
 ## **팀 소개: 일사천리**
 
-- **Toby.Kim (김대현)** - PM & AI / AI Video 피드백 기능 & Data 파이프라인 구축
-- **Ella.Kim (김혜현)** - AI / AI Voice 피드백 기능 개발
+- **Toby.Kim (김대현)** - PM & AI / AI Video 피드백 기능 & Data 처리 파이프라인 구축
+- **Ella.Kim (김혜현)** - AI / AI Voice 피드백 기능 개발
 - **Teddy.Kim (김영진)** - BE / Chatting & Login OAuth 개발
 - **Neo.lee (이정진)** - BE / Media Chat 구축 (Video & Voice Call)
 - **Selina.lee (이소민)** - Cloud / Infra & CI/CD 구축
-- **David.lee (이찬영)** - Cloud / Infra & Architeture 설계
+- **David.lee (이찬영)** - Cloud / Infra & Architeture 설계
 
 ---
 
