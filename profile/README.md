@@ -56,14 +56,14 @@
 ---
 
 ## **Sequence Diagram**
-- Login은 jwt 관련한 access, refresh token 로직을 axios interceptor를 통해 관리됩니다.
-  
-![iScreen Shoter - 20250108003550090](https://github.com/user-attachments/assets/b7363cbf-cfc8-41f9-b0d9-ae4974234693)
+- Login은 jwt 관련한 access, refresh token 로직을 axios interceptor를 통해 관리됩니다. (좌측 사진)
+- Websocket은 토큰과 heartbeat로 서버에 연결후, WebRTC를 통해 **ICE Candidate**를 교환후 P2P 미디어 스트리밍을 시작하며, 모든 상태 변경과 채널 퇴장은 알람을 통해 실시간으로 모든 참가자에게 전달됩니다. (우측 사진)
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d17a65c7-9f60-40c5-8844-2dbcc9584f9b" alt="iScreen Shoter - 20250108003550090" width="46%"/>
+  <img src="https://github.com/user-attachments/assets/acfc86e1-13ef-4867-8d7f-9d4b8681f6c4" alt="image 11" width="35%"/>
+</p>
 
-- Websocket은 토큰과 heartbeat로 서버에 연결후, WebRTC를 통해 **ICE Candidate**를 교환후 P2P 미디어 스트리밍을 시작하며, 모든 상태 변경과 채널 퇴장은 알람을 통해 실시간으로 모든 참가자에게 전달됩니다.
-
-![image (11)](https://github.com/user-attachments/assets/acfc86e1-13ef-4867-8d7f-9d4b8681f6c4)
 
 - Redis, Rabbitmq는 채팅을 보내면 Rabbitmq에 넣고 consumer가 꺼내어 DB저장, Redis Cache, Broadcast 작업을 진행합니다.
   
@@ -88,20 +88,63 @@
 
 ## 💻 사용 스택
 
-
-| **구분**      | **기술**                                                                                                                                                                                                                                                                                                                                                                    |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Frontend** | <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=Vite&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=TailwindCSS&logoColor=white"/> <img src="https://img.shields.io/badge/Zustand-181717?style=flat-square&logo=Zustand&logoColor=white"/> |
-| **Backend**     | <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/SpringWebFlux-6DB33F?style=flat-square&logo=Spring&logoColor=white"/> <img src="https://img.shields.io/badge/WebSocket-000000?style=flat-square&logo=WebSocket&logoColor=white"/> <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=WebRTC&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white"/> <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=RabbitMQ&logoColor=white"/> |
-| **AI & Data**        | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=TensorFlow&logoColor=white"/> <img src="https://img.shields.io/badge/MediaPipe-3776AB?style=flat-square&logo=MediaPipe&logoColor=white"/> <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=OpenAI&logoColor=white"/> <img src="https://img.shields.io/badge/Whisper-000000?style=flat-square&logo=Whisper&logoColor=white"/> <img src="https://img.shields.io/badge/Librosa-FF6F00?style=flat-square&logo=Librosa&logoColor=white"/> |
-| **Cloud & Infra**   | <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=Linux&logoColor=black"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=AmazonAWS&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/> <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=Jenkins&logoColor=white"/> <img src="https://img.shields.io/badge/Terraform-623CE4?style=flat-square&logo=Terraform&logoColor=white"/> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=Ansible&logoColor=white"/> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white"/> |
-| **협업툴**     | <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=Jira&logoColor=white"/> <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white"/> |
+| **구분**         | **기술**                                                                                                                                                                                                                                                                                                                                                                    |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Frontend**     | <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=Vite&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=TailwindCSS&logoColor=white"/> <img src="https://img.shields.io/badge/Zustand-181717?style=flat-square&logo=Zustand&logoColor=white"/> |
+| **Backend**      | <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/SpringWebFlux-6DB33F?style=flat-square&logo=Spring&logoColor=white"/> <img src="https://img.shields.io/badge/WebSocket-000000?style=flat-square&logo=WebSocket&logoColor=white"/> <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=WebRTC&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white"/> <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=RabbitMQ&logoColor=white"/> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"/> <img src="https://img.shields.io/badge/S3-569A31?style=flat-square&logo=AmazonS3&logoColor=white"/> <img src="https://img.shields.io/badge/OAuth2-3A2F3B?style=flat-square&logo=OAuth&logoColor=white"/> <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=JSONWebTokens&logoColor=white"/> |
+| **AI & Data**    | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=TensorFlow&logoColor=white"/> <img src="https://img.shields.io/badge/MediaPipe-3776AB?style=flat-square&logo=MediaPipe&logoColor=white"/> <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=OpenAI&logoColor=white"/> <img src="https://img.shields.io/badge/Whisper-000000?style=flat-square&logo=Whisper&logoColor=white"/> <img src="https://img.shields.io/badge/Librosa-FF6F00?style=flat-square&logo=Librosa&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=OpenCV&logoColor=white"/> <img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=FFmpeg&logoColor=white"/> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white"/> |
+| **Cloud & Infra**| <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=Linux&logoColor=black"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=AmazonAWS&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/> <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=Jenkins&logoColor=white"/> <img src="https://img.shields.io/badge/Terraform-623CE4?style=flat-square&logo=Terraform&logoColor=white"/> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=Ansible&logoColor=white"/> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=Grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=Prometheus&logoColor=white"/> <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=Nginx&logoColor=white"/> |
+| **협업툴**       | <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/GitLens-2D4457?style=flat-square&logo=GitLens&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=Jira&logoColor=white"/> <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white"/> |
 
 - FE(프론트엔드): React, Vite, TypeScript, TailwindCSS, Zustand
 - BE(백엔드): Java, Spring WebFlux, WebSocket, WebRTC, Redis, RabbitMQ, PostgreSQL, S3, OAuth2, JWT
 - AI & Data: Python, TensorFlow, Mediapipe, OpenAI, Whisper, Librosa, OpenCV, FFmpeg, FastAPI
 - Cloud & Infra: AWS (EC2, S3, RDS), Docker, Jenkins, Terraform, Ansible, Prometheus, Grafana, Nginx, Linux
 - 협업툴: Git, GitHub, GitLens, Notion, Jira, Slack
+
+---
+
+## 📅 프로젝트 개발 기간
+- 총 14주의 Sprint를 진행 (09.23 ~ 12.27)
+
+![_kakaotech_14_2025-01-08_03 46pm](https://github.com/user-attachments/assets/507c79d2-512f-4a27-b8a1-9d21d033c17a)
+
+| **SPRINT**      | **상세내용**                                                                                                  |
+|------------------|-------------------------------------------------------------------------------------------------------------|
+| **Week 1**       | 팀 개발 주제 Ideation & 구체화, Ground Rule, 협업 환경 구성 (Notion, Jira, Github)                             |
+| **Week 2~3**     | 기획안 발표, 기능 MVP 정의, 피드백 내용 정리, 팀 개발 Process 확립 (Agile)                                     |
+| **Week 4**       | Login UX/UI Design, FE 개발 (메인페이지)                                                                     |
+| **Week 5**       | Login UX/UI Design, FE 개발, AI 모델 Research, Cloud 기술 STUDY                                             |
+| **Week 6**       | BE 개발 시작, ERD DESIGN, AI 영상 & 음성처리 모델 TEST, Cloud ARCHITECTURE 설계                              |
+| **Week 7**       | GATEWAY, WEBSOCKET, OAUTH 개발, AI Data Pipeline, 음성 모델 개발, RabbitMQ Test                              |
+| **Week 8**       | OAUTH, JWT, USER 로직 개발, AI용 FastAPI 개발 & TEST, 음성처리 모델 테스트, CI/CD Test                      |
+| **Week 9**       | Chatting 기능 개발, UDP Server 개발, 음성서버 모듈화, k8s Study, Docker Image 용량 줄이기                    |
+| **Week 10**      | WebRTC 서버 PeerConnection, BE Exception, Front E2E Test & Refactoring, 음성서버 Router 개발, CI/CD 2차 Test (Docker, Jenkins) |
+| **Week 11**      | Group (음성, 영상) 통화 동기화 문제 해결, Chatting 기능 개발, AI Server Log Level 설정 및 음성처리 서버 성능 개선, CI/CD 2차 Test & Monitoring 도구 장착 |
+| **Week 12**      | WebRTC Test, Chatting Test Code 작성 (STOMP), AI 영상서버 성능개선, Monitoring 도구 장착, Jenkins             |
+| **Week 13**      | RabbitMQ 테스트, WebRTC Test 마무리, Nginx, AI 영상서버 Computer Vision 적용, LoadBalancer & Jenkins         |
+| **Week 14**      | 통합테스트 및 최종 발표 준비                                                                                |
+
+---
+
+## 📌 프로젝트 결과물
+
+### 채팅 & 영상 & 음성 통화 기능
+
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/ee53058a-6ea3-4c0b-b0e1-8d9cf0ed5220" alt="image 13" width="33%"/>
+  <img src="https://github.com/user-attachments/assets/f6736b16-e0b6-41aa-9804-579696d1a3ad" alt="image 14" width="31%"/>
+  <img src="https://github.com/user-attachments/assets/cdfdf883-af20-48f6-a6db-0d1f2118a0f4" alt="image 15" width="33%"/>
+</p>
+
+### 발표 & AI 피드백 기능
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/42ac683c-cf56-4f26-ab39-8086baa63307" alt="image 16" width="33%"/>
+  <img src="https://github.com/user-attachments/assets/f1036921-e7a7-4b5e-a68f-44f441bef4a3" alt="image 17" width="33%"/>
+  <img src="https://github.com/user-attachments/assets/734e6c88-473a-430d-ba76-0c58cec814f7" alt="pronun feedback" width="33%"/>
+</p>
+
 
 ---
 
