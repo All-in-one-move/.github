@@ -1,4 +1,4 @@
-![iScreen Shoter - Preview - 241028160444](https://github.com/user-attachments/assets/79854f3f-85ff-4e83-9696-080e680756a8)
+![iScreen Shoter - Preview - 250108160251](https://github.com/user-attachments/assets/9453f03d-aa96-48fb-9f56-00b3a1dc8e63)
 
 # Pitching! (Speaking + Teaching = Pitching)
 
