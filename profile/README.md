@@ -1,3 +1,7 @@
+<div align="right">
+  <img src="https://img.shields.io/badge/kakao tech bootcamp-FFCD00?style=flat&logo=kakao&logoColor=black" alt="kakao" height="23">
+</div>
+
 ![iScreen Shoter - Preview - 250108160251](https://github.com/user-attachments/assets/9453f03d-aa96-48fb-9f56-00b3a1dc8e63)
 
 # Pitching! (Speaking + Teaching = Pitching)
